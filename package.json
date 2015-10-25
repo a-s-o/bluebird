@@ -20,5 +20,8 @@
     "bluebird": "^2.10.2",
     "is-es6-generators": "^1.0.2",
     "is-iterator-like": "^1.0.4"
+  },
+  "engines" : {
+    "node" : ">=4.1.0"
   }
 }

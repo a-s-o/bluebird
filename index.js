@@ -1,6 +1,9 @@
 'use strict';
 
 const Bluebird = module.exports = require('bluebird');
+const isGenerator = require('is-es6-generators');
+const isGeneratorFunction = require('is-es6-generators').fn;
+const isIteratorLike = require('is-iterator-like');
 
 Bluebird.coroutine.addYeildHandler(function bluebird$yield (value) {
    // Generator function
@@ -18,7 +21,7 @@ Bluebird.coroutine.addYeildHandler(function bluebird$yield (value) {
    // Thunk (Function that accepts a node-style callback)
    if ( typeof value === 'function' ) {
       const deferred = Bluebird.defer();
-      try { value(deferred.callback); } catch(e) { deferred.reject(e); }
+      try { value(deferred.callback); } catch (e) { deferred.reject(e); }
       return deferred.promise;
    }
 
