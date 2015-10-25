@@ -1,0 +1,24 @@
+{
+  "name": "bluebird-fork",
+  "version": "2.0.0",
+  "description": " bluebird with built yeild handler for arrays, objects, thunks and iterators ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-s-o/bluebird.git"
+  },
+  "author": "Amandeep",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-s-o/bluebird/issues"
+  },
+  "homepage": "https://github.com/a-s-o/bluebird#readme",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "is-es6-generators": "^1.0.2",
+    "is-iterator-like": "^1.0.4"
+  }
+}
