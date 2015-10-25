@@ -5,7 +5,7 @@ const isGenerator = require('is-es6-generators');
 const isGeneratorFunction = require('is-es6-generators').fn;
 const isIteratorLike = require('is-iterator-like');
 
-Bluebird.coroutine.addYeildHandler(function bluebird$yield (value) {
+Bluebird.coroutine.addYieldHandler(function bluebird$yield (value) {
    // Generator function
    if ( isGeneratorFunction(value) ) {
       return Bluebird.coroutine(value).call();
