@@ -1,5 +1,5 @@
 {
-  "name": "bluebird-fork",
+  "name": "@a-s-o/bluebird",
   "version": "2.0.0",
   "description": " bluebird with built yeild handler for arrays, objects, thunks and iterators ",
   "main": "index.js",
