@@ -1,6 +1,6 @@
 {
   "name": "@aso/bluebird",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": " bluebird with built yeild handler for arrays, objects, thunks and iterators ",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/a-s-o/bluebird#readme",
   "dependencies": {
-    "bluebird": "^2.10.2",
+    "bluebird": "^3.0.0",
     "is-es6-generators": "^1.0.2",
     "is-iterator-like": "^1.0.4"
   },
