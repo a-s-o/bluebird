@@ -20,9 +20,7 @@ Bluebird.coroutine.addYieldHandler(function bluebird$yield (value) {
 
    // Thunk (Function that accepts a node-style callback)
    if ( typeof value === 'function' ) {
-      const deferred = Bluebird.defer();
-      try { value(deferred.callback); } catch (e) { deferred.reject(e); }
-      return deferred.promise;
+      return Bluebird.fromCallback(value)();
    }
 
    // Array
