@@ -20,7 +20,7 @@ Bluebird.coroutine.addYieldHandler(function bluebird$yield (value) {
 
    // Thunk (Function that accepts a node-style callback)
    if ( typeof value === 'function' ) {
-      return Bluebird.fromCallback(value)();
+      return Bluebird.fromNode(value);
    }
 
    // Array
